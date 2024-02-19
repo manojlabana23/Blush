@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bg1:#151828;
+    --bg1:#1B1F34;
+    --body:#959DCC;
+    --brand:#FFAB76;
+    --white:#fff;
+}
+body{
+    font-family:"Inter",'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-hight:1.8;
+    background-color: black;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Dela Gothic one;"'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+a{
+    color: var(--body);
+    text-decoration: none;
+
+}
+a:hover
+    {
+    color:var(--brand);
+    
+}
+
+.link-more{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+
+}
+.link-more .icon{
+    transition: all 0.4s ease;
+
+}
+.link-more:hover .icon{
+    transform: translateX(8px);
+}
+img{
+    width: 100%;
+
+}
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+
+}
+
+.navbarNav a:hover{
+  color: #0ef;
+}
+
+.intro{
+    margin-bottom: 60px;
+}
+.intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.intro h6{
+    color: var(--brand);
+}
+.intro p{
+    max-width: 450px;
+    margin: auto;
+
+}
+.cta-btns{
+    margin-top: 60px;
+
+}
+
+.navbar{
+    background: linear-gradient(to right, #1B1F34,rgba(27,31,52,0.0))
+
+}
+.navbar-brand{
+    font-family: "Dela Gothic one;"'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+
+
+}
+
+
+#hero{
+    background: linear-gradient(to right, #1B1F34,rgba(27,31,52,0.0)),url(../img/p1);
+    min-width: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#hero p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.btn{
+    padding: 16px 36px;
+    font-family: "Dela Gothic one;"'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
+    border-radius: 0;
+
+}
+.btn-brand{
+    background-color: var(--brand);
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-otline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+
+}
+
+#about{
+    position: relative;
+
+
+}
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+
+}
+
+#about h6{
+    color: var(--brand);
+
+}
+#about h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#service{
+    background: var(--bg2);
+}
+#service .service .content{
+    padding: 32px;
+}
+#service .service p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+
+/* contact us */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+ 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+ 
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Review */
+  
+Reviews{
+  background-color: var(--bg2);
+}
+.review{
+  padding: 32px;
+}
+.review img{
+  width: 55px;
+  border-radius: 95px;
+}
+.review .icon{
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: right;
+  color: var(--bg1);
+  border-radius: 100px;
+  position: absolute;
+  top: 101px;
+  left: 160px;
+  
+}
+/* booking */
+
+#booking{
+  background: linear-gradient(to right,rgba(27,31,52,0.8)),url(../img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#booking form{
+  
+  padding: 32px;
+
+}
+#booking form .form-control{
+  background-color: var(--bg2);
+  border-radius: 0;
+  margin-top: 16px;
+  border-color: var(bg2);
+
+}
+#booking form input{
+  height: 58px;
+}
+#booking form input:focus{
+  box-shadow: none;
+}
+footer{
+  padding-top: 160px;
+}
+
+footer .social-links{
+  display: flex;
+}
+footer .social-links a{
+  margin-right: 5px;
+}
+.footer-top{
+  padding-bottom: 30px;
+}
+footer-bottom{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
+
+
+
+
+  
